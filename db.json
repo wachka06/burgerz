@@ -1,0 +1,59 @@
+{
+  "burgers":[
+    {
+      "id": 1,
+      "name": "The Baconator",
+      "category": "Relatable"
+    },
+    {
+      "id": 2,
+      "name": "Sal's Burger",
+      "category": "Relatable"
+    },
+    {
+      "id": 3,
+      "name": "Sloppy Beef",
+      "category": "Relatable"
+    },
+    {
+      "id": 4,
+      "name": "Glamburger",
+      "category": "Bougie"
+    },
+    {
+      "id": 5,
+      "name": "Burgér",
+      "category": "Bougie"
+    },
+    {
+      "id": 5,
+      "name": "Cow-abunga",
+      "category": "Relatable"
+    },
+    {
+      "id": 6,
+      "name": "Le Magnifique",
+      "category": "Bougie"
+    },
+    {
+      "id": 7,
+      "name": "HamBougie",
+      "category": "Bougie"
+    },
+    {
+      "id": 8,
+      "name": "Green Eggs and Hamburger",
+      "category": "Relatable"
+    },
+    {
+      "id": 9,
+      "name": "Veggie Burger",
+      "category": "Relatable"
+    },
+    {
+      "id": 10,
+      "name": "Spinach",
+      "category": "Bougie"
+    }
+  ]
+}
