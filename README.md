@@ -1,53 +1,41 @@
-# WOOF WOOF WELCOME TO DOGGO BARK BARK
+# WELCOME TO THE BOUNTIFUL BURGER APP
 
-THIS GOOD APPLICATION FOR LOOKING AT DOGS BOW WOW
-
-WHEN LOOKING AT PUP PUPS USER SHOULD BE ABLE TO:
- - CLICK ON DOGS IN THE DOG BAR TO SEE MORE INFO ABOUT THE GOOD PUPPER
-   - MORE INFO INCLUDES A DOG PIC, A DOG NAME, AND A DOG BUTTON THAT INDICATES
-     WHERE IT IS A GOOD DOG OR A BAD DOG
- - CLICK ON GOOD DOG/BAD DOG BUTTON IN ORDER TO TOGGLE PUP GOODNESS
- - CLICK ON "FILTER GOOD DOGS" BUTTON IN ORDER TO JUST SEE GOOD DOGS OR SEE
-   ALL DOGS IN DOG BAR
-
-## EXAMPLE:
-![Showcasing the full functionality](woof-woof-demo.gif)
+This app is your first step towards becoming the world's greatest burger connoisseur. Your app should be able to:
+ - List the names of your burgers in a BurgerList
+ - When clicking on the 'Show' button below a burger, it should display more info about the burger in the BurgerDisplay area
+   - More info includes the burger category and its image
+ - Selecting the dropdown filter should allow you to filter the BurgerList by category
+ - BONUS: Changing the burger category on the BurgerDisplay should persist the change to the backend
+ - BONUS: Clicking the Hide button should delete the burger from the list (this does **not** need to persist)
 
 ### STEP 1: VIEW THE DATA
-All of the dog data is stored in the db.json file. You'll want to access this data
-using a json server. In order to do this, run the following commands:
-  npm install -g json-server
+All of the burger data is stored in the db.json file. You'll want to access this data using a json server. In order to do this, run the following commands:
   json-server --watch db.json
 
-This will setup the data on a server using restful routes at http://localhost:3000/pups.
-Go ahead and head to that url in your browser to view the data.
-Familiarize yourself with the attributes for each pup. Try going to /pups/:id to see an individual pup as well.
+This will setup the data on a server using restful routes at http://localhost:3000/burgers.
 
-### STEP 2: ADD PUPS TO DOG BAR
-On the page, there is a div with the id of "dog-bar". On page load, make a fetch
-to get all of the pup objects. When you have this information, you'll need to add
-a span with the pup's name to the dog bar (ex: <span>Mr. Bonkers</span>).
+Go to that url in your browser to view the data.
 
-### STEP 3: SHOW MORE INFO ABOUT EACH PUP
-When a user clicks on a pup's span in the dog bar, that pup's info (image, name, and isGoodDog status) should show up in the div with the id of "dog-info".
-When you have the pup's information, the dog info div should have the following children:
- - an img tag with the pup's image url
- - an H2 with the pup's name
- - a button that says "Good Dog!" or "Bad Dog!" based on whether isGoodDog is true or false.
- Ex:
- ```
-  <img src=dog_image_url>
-  <h2>Mr. Bonkers</h2>
-  <button>Good Dog!</button>
- ```
+### STEP 2: ADD BURGERS TO BURGERLIST
+On page load, make a fetch
+to get all of the burger data. When you have this information, render the burger names to the BurgerList.
 
- ### STEP 4: TOGGLE GOOD DOG
- When a user clicks the Good Dog/Bad Dog button, two things should happen:
-  - The button's text should change from Good to Bad or Bad to Good
-  - The corresponding pup object in the database should be updated to reflect the new isGoodDog value
-    - Please note, you can update a dog by making a PATCH request to /pups/:id
+### STEP 3: DISPLAY INFO ABOUT EACH BURGER ON CLICK
+When a user clicks on the 'Show' button below a burger in the BurgerList, that burger's info (image, name, and category) should display in the BurgerDisplay component.
 
-### STEP 5: FILTER GOOD DOGS
-When a user clicks on the Filter Good Dogs button, two things should happen:
- - The button's text should change from "Filter good dogs: OFF" to "Filter good dogs: ON", or vice versa.
- - If the button now says "ON" (meaning the filter is on), then the Dog Bar should only show pups whose isGoodDog attribute is true. If the filter is off, the Dog Bar should show all pups (like normal).
+The category should display as a dropdown, with the default value set to the category of the burger.
+
+### STEP 4: FILTER BURGERS BY CATEGORY
+ When a user changes the value of the select dropdown above the BurgerList, the burgers displayed in the list should change accordingly:
+
+ - the 'All' option should display all burgers
+ - the 'Bougie' option should display only Bougie burgers
+ - the 'Relatable' option should display only Relatable burgers
+
+### BONUS: CHANGE BURGER CATEGORY
+  The burger category displays as a select dropdown in the BurgerDisplay component. When a user changes the value of the dropdown, this change should persist.
+
+  For example, if a user changes the category of 'Veggie Burger' from Relatable to Bougie, then this change should still be reflected on the page upon refresh.
+
+### BONUS 2: HIDE BURGERS FROM THE LIST
+  When a user clicks on the 'Hide' button of a burger on the BurgerList, it should delete the burger's name from the list. This change does **not** need to persist to the backend.
