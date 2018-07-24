@@ -30,7 +30,7 @@ body {
 
 .BurgerList {
   overflow: scroll;
-  height: 90vh;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-flex-start;
@@ -48,7 +48,7 @@ body {
   background-color: #f7d559;
   border-top-left-radius: 30%;
   border-top-right-radius: 30%;
-  height: 10vh;
+  height: 7vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,8 +56,8 @@ body {
 
 .BurgerBottomBun {
   background-color: #f7d559;
-  height: 7vh;
-  border-top: 0.5vh solid black;
+  height: 5vh;
+  border-top: 4vh solid #6b1c00;
   display: flex;
   align-content:space-around;
   align-items: center;

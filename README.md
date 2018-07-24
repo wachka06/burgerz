@@ -8,11 +8,15 @@ This app is your first step towards becoming the world's greatest burger connois
  - BONUS: Changing the burger category on the BurgerDisplay should persist the change to the backend
  - BONUS: Clicking the Hide button should delete the burger from the list (this does **not** need to persist)
 
+## EXAMPLE:
+![Showcasing the full functionality](burgerz-example.gif)
+
 ### STEP 1: VIEW THE DATA
 All of the burger data is stored in the db.json file. You'll want to access this data using a json server. In order to do this, run the following command:
+  - npm install -g json-server
   - json-server --watch db.json
 
-This will setup the data on a server using restful routes at http://localhost:3000/burgers.
+This will setup the data on a server using restful routes at http://localhost:3001/burgers.
 
 Go to that url in your browser to view the data.
 
