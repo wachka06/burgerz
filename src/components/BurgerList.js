@@ -5,7 +5,7 @@ export default class BurgerList extends Component {
   render(){
     return (
       <div className="BurgerList">
-        { /* List the BurgerItems here */ }
+        { /* Render Burger Items Here*/ }
       </div>
     )
   }
