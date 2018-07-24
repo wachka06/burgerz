@@ -12,7 +12,7 @@ This app is your first step towards becoming the world's greatest burger connois
 All of the burger data is stored in the db.json file. You'll want to access this data using a json server. In order to do this, run the following command:
   - json-server --watch db.json
 
-This will setup the data on a server using restful routes at http://localhost:3000/burgers.
+This will setup the data on a server using restful routes at http://localhost:3001/burgers.
 
 Go to that url in your browser to view the data.
 
