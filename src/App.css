@@ -7,7 +7,6 @@ body {
 }
 
 .BurgerContainer {
-  border: 1px solid red;
   width: 25vw;
   height: 100vh;
 }
@@ -15,7 +14,6 @@ body {
 .BurgerDisplay {
   width: 75vw;
   height: 100vh;
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,6 +34,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: gray;
 }
 
 .BurgerFilter select {

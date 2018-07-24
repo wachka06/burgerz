@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 const BurgerItem = (props) => {
   return (
     <div className="BurgerItem">
-      { props.burger.name }
+      { /* Display burger name here */ }
     </div>
   )
 }
