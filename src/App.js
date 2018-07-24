@@ -7,7 +7,7 @@ import BurgerDisplay from './components/BurgerDisplay'
 class App extends Component {
   render() {
     return (
-      <div>
+      <div id="App">
         <BurgerContainer />
         <BurgerDisplay />
       </div>

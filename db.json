@@ -31,12 +31,6 @@
       "imgURL": "https://assets3.thrillist.com/v1/image/937699/size/tmg-article_default_mobile.jpg"
     },
     {
-      "id": 5,
-      "name": "Cow-abunga",
-      "category": "Relatable",
-      "imgURL": "https://www.checkers.com/wp-content/uploads/2017/03/BigBuford_Feature_1000x1000-600x600.jpg"
-    },
-    {
       "id": 6,
       "name": "Le Magnifique",
       "category": "Bougie",
@@ -65,6 +59,12 @@
       "name": "Spinach",
       "category": "Bougie",
       "imgURL": "https://www.organicfacts.net/wp-content/uploads/spinach.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Cow-abunga",
+      "category": "Relatable",
+      "imgURL": "https://www.checkers.com/wp-content/uploads/2017/03/BigBuford_Feature_1000x1000-600x600.jpg"
     }
   ]
 }
