@@ -5,7 +5,7 @@ const BurgerDisplay = (props) => {
       <div className="BurgerDisplay">
         <img src={props.burger.imgURL}/>
         <br/>
-        <h2>{props.burger.name}</h2>
+        <h1>{props.burger.name}</h1>
         <br/>
         <select value={props.burger.category} onChange={() => props.updateBurger(props.burger.id)}>
           <option value="Relatable">Relatable</option>
