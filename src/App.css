@@ -16,6 +16,18 @@ body {
   width: 75vw;
   height: 100vh;
   border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.BurgerDisplay img {
+  width: 80%;
+}
+
+.BurgerDisplay select {
+  width: 30%;
 }
 
 .BurgerList {
