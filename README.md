@@ -23,7 +23,7 @@ to get all of the burger data. When you have this information, render the burger
 ### STEP 3: DISPLAY INFO ABOUT EACH BURGER ON CLICK
 When a user clicks on the 'Show' button below a burger in the BurgerList, that burger's info (image, name, and category) should display in the BurgerDisplay component.
 
-The category should display as a dropdown, with the default value set to the category of the burger.
+The category should display as a dropdown, with the default value set to the category of the burger. (e.g. The dropdown of the Veggie Burger should have Relatable as the default display value.)
 
 ### STEP 4: FILTER BURGERS BY CATEGORY
  When a user changes the value of the select dropdown above the BurgerList, the burgers displayed in the list should change accordingly:
